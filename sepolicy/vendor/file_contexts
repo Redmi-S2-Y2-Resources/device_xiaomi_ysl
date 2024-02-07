@@ -21,6 +21,10 @@
 /dev/goodix_fp                                  u:object_r:fingerprint_device:s0
 /sys/devices(/platform)?/soc/soc:fpc1020(/.*)?  u:object_r:fingerprint_sysfs:s0
 
+# Dolby
+/data/vendor/dolby(/.*)?                                                      u:object_r:vendor_data_file:s0
+/(vendor|system/vendor)/bin/hw/vendor\.dolby\.hardware\.dms@2\.0-service      u:object_r:hal_dms_default_exec:s0
+
 # Firmware
 /firmware                                                     u:object_r:firmware_file:s0
 /bt_firmware                                                  u:object_r:bt_firmware_file:s0
