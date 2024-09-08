@@ -33,6 +33,7 @@ cc_binary {
     compile_multilib: "32",
     init_rc: ["android.hardware.biometrics.fingerprint@2.3-service.xiaomi_msm8953-32.rc"],
     vintf_fragments: ["android.hardware.biometrics.fingerprint@2.3-service.xiaomi_msm8953-32.xml"],
+}
 
 cc_library_shared {
     name: "libvendor.goodix.hardware.fingerprint@1.0",
